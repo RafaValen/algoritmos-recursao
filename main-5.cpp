@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    int a,b;
+    int resultado = 0;
+
+    cout << "Digite dois numeros: ";
+    cin >> a >> b;
+
+    for(int i = 0; i < b; i++){
+        resultado = resultado + a;
+    }
+
+    cout << "Multiplicacao iterativa: " << resultado;
+
+    return 0;
+}

@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int somaRecursiva(int n){
+    if(n == 0){
+        return 0;
+    }
+    else{
+        return n + somaRecursiva(n - 1);
+    }
+}
+
+int main(){
+    int n;
+
+    cout << "Digite um numero: ";
+    cin >> n;
+
+    cout << "Soma recursiva: " << somaRecursiva(n);
+
+    return 0;
+}
